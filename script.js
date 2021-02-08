@@ -15,7 +15,7 @@ function ButtonClick() {
 
   //click clear results
   document.querySelector("#clear").addEventListener("click", ResultClear);
-}
+};
 
 function result() {
   console.log("done");
@@ -36,7 +36,7 @@ function result() {
     let round = document.querySelector("#decimals");
     let roundNum = round.options[round.selectedIndex].text;
     calculate = calculate.toFixed(roundNum);
-  }
+  };
 
   //write result
   document.querySelector("#results").innerHTML += "<li>" + calculate + "</li>";
@@ -46,11 +46,11 @@ function result() {
 
   //scroll list to bottom
   document.querySelector("#results").lastChild.scrollIntoView(false);
-}
+};
 
 function ResultClear() {
   console.log("gone");
 
    //clear results
   document.querySelector("#results").innerHTML = "";
-}
+};
